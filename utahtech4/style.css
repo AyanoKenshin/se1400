@@ -36,13 +36,34 @@ header a {
 nav {
     grid-row: 2 / 3;
     grid-column: 2 / -2;
+    background-color: #424242;
+    position: sticky;
+    top: 0;
     font-weight: bold;
-    background-color: #F3F3F3;
-    padding: 0.5rem 0.5rem 0.5rem 2rem;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+}
+
+nav ul li {
+    width: 100%;
 }
 
 nav a {
+    color: #FFFFFF;
     text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 1 rem 0 rem;
+}
+
+nav a:hover {
+    background-color: #BA1C21;
 }
 
 h2 {
