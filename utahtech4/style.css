@@ -1,4 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
     background: linear-gradient(to bottom, #eeeeee, #ffffff);
     background-attachment: fixed;
     color: #666666;
@@ -6,22 +11,31 @@ body {
 }
 
 header {
+    grid-row: 1 / 2;
+    grid-column: 2 / -2;
     background-color: #003058;
     color: #FFFFFF;
     font-family: Georgia, serif;
 }
 
 header h1 {
+    margin: 0;
     line-height: 140%;
     padding-left: 1em;
     background-image: url("utahtechlogo.svg");
     background-position: right;
     background-repeat: no-repeat;
     background-origin: content-box;
-    margin-bottom: 0;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 nav {
+    grid-row: 2 / 3;
+    grid-column: 2 / -2;
     font-weight: bold;
     background-color: #F3F3F3;
     padding: 0.5rem 0.5rem 0.5rem 2rem;
@@ -51,6 +65,8 @@ dt {
 }
 
 footer {
+    grid-row: 5 / 6;
+    grid-column: 2 / -2;
     font-size: 0.70rem;
     font-style: italic;
     text-align: center;
@@ -58,21 +74,27 @@ footer {
 }
 
 main {
+    grid-row: 4 / 5;
+    grid-column: 2 / -2;
+    background-color: #ffffff;
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
+main img {
+    float: right;
+    padding-left: 2rem;
+}
+
 #wrapper {
-    width: 80%;
-    min-width: 960px;
-    max-width: 2048px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #ffffff;
-    box-shadow: 0px 3px 3px rgba(66, 66, 66, 0.3);
+    display: grid;
+    grid-auto-rows: minmax(0px, auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 }
 
 #homehero {
+    grid-row: 3 / 4;
+    grid-column: 2 / -2;
     height: 300px;
     background-image: url('homehero.jpg');
     background-size: cover;
@@ -81,6 +103,8 @@ main {
 }
 
 #studenthero {
+    grid-row: 3 / 4;
+    grid-column: 2 / -2;
     height: 300px;
     background-image: url('studenthero.jpg');
     background-size: cover;
@@ -89,6 +113,8 @@ main {
 }
 
 #facultyhero {
+    grid-row: 3 / 4;
+    grid-column: 2 / -2;
     height: 300px;
     background-image: url('facultyhero.jpg');
     background-size: cover;
