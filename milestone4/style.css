@@ -11,12 +11,16 @@ body {
 }
 
 #wrapper {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    grid-template-rows: auto auto 1fr auto;
+    grid-gap: 20px;
 }
 
 header {
     grid-column: 2 / 8;
+    grid-row: 1;
     text-align: center;
     padding: 10px;
 }
@@ -24,12 +28,13 @@ header {
 header h1 {
     font-size: 3rem;
     font-weight: 900;
-    color:#FFFFFF;
-    text-shadow: 0 0 10px #f5d77a, 0 0 20px #f5d77a;
+    color:#aee8ff;
+    text-shadow: 0 0 1px #f5d77a, 0 0 15px #f5d77a;
 }
 
 nav {
     grid-column: 2 / 8;
+    grid-row: 2;
     text-align: center;
     padding: 10px;
 }
@@ -55,6 +60,7 @@ nav a:hover {
 
 main {
     grid-column: 3 / 7;
+    grid-row: 3;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
@@ -74,6 +80,7 @@ main p {
 
 footer {
     grid-column: 2 / 8;
+    grid-row: 4;
     text-align: center;
     font-size: 0.9rem;
     background-color: rgba(255, 255, 255, 0.1);
