@@ -7,6 +7,7 @@ body {
     background-color: #000;
     color: #FFFFFF;
     background-image: url(spacestars.jpg);
+
 }
 
 #wrapper {
@@ -18,34 +19,34 @@ header {
     grid-column: 2 / 8;
     text-align: center;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color:#FFFFFF;
+    text-shadow: 0 0 10px #f5d77a, 0 0 20px #f5d77a;
 }
 
 nav {
     grid-column: 2 / 8;
     text-align: center;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.2);
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-flow: row nowrap;
     list-style-type: none;
+    display: flex;
     justify-content: center;
-}
-
-nav ul li {
-    text-align: center;
-    width: 20%;
+    gap: 50px;
+    padding: 10px 0;
 }
 
 nav a {
-    color: #FFFFFF;
+    color: #aee8ff;
+    font-weight: 700;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 nav a:hover {
@@ -53,14 +54,37 @@ nav a:hover {
 }
 
 main {
-    grid-column: 2 / 8;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.3);
+    grid-column: 3 / 7;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+main h2{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #aee8ff;
+}
+
+main p {
+    margin-bottom: 20px;
 }
 
 footer {
     grid-column: 2 / 8;
-    background-color: rgba(255, 255, 255, 0.4);
     text-align: center;
+    font-size: 0.9rem;
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 10px;
+}
+
+footer a {
+    color: #aee8ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
