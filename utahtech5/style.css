@@ -154,3 +154,9 @@ main img {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+@media only screen and (max-width: 900px) {
+    #wrapper {
+        grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);
+    }
+}
