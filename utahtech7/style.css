@@ -285,3 +285,29 @@ label {
         display: none;
     }
 }
+
+table {
+    margin: 0 auto;
+    border: 1px solid #424242;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid #424242;
+    text-align: center;
+}
+
+th {
+    padding: 5px;
+    border: 1px solid #424242;
+}
+
+.text {
+    text-align: left;
+}
+
+table tr:nth-of-type(even) {
+    background-color: #F3F3F3;
+}
