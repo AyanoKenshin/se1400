@@ -72,6 +72,10 @@ main {
     padding: 20px;
     background-color: #EEF7EE;
     border-radius: 8px;
+    margin-top: 0px;
+}
+
+#homehero + main {
     margin-top: 340px;
 }
 
@@ -159,24 +163,8 @@ footer a:hover {
         grid-template-rows: auto auto 1fr auto;
     }
 
-    header {
-        grid-column: 1 / 2;
-    }
-
     nav {
         grid-column: 1 / 2;
-    }
-
-    main {
-        grid-column: 1 / 2;
-    }
-
-    footer {
-        grid-column: 1 / 2;
-    }
-
-    #homehero {
-        display: none;
     }
 
     nav ul {
@@ -190,13 +178,30 @@ footer a:hover {
         font-size: 1.1rem;
     }
 
+    header {
+        grid-column: 1 / 2;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
     main {
+        grid-column: 1 / 2;
         margin-top: 0;
         padding: 20px;
         background-color: #EEF7EE;
     }
 
-    header h1 {
-        font-size: 2rem;
+    #homehero {
+        display: none;
+    }
+
+    #homehero + main {
+        margin-top: 0;
+    }
+
+    footer {
+        grid-column: 1 / 2;
     }
 }
