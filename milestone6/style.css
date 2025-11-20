@@ -75,6 +75,16 @@ main {
     margin-top: 340px;
 }
 
+main a {
+    text-decoration: none;
+    color:#2F5D45
+}
+
+main a:hover {
+    color: #1D3328;
+    text-decoration: underline;
+}
+
 main h2{
     color: #2F5D45;
     margin-top: 20px;
