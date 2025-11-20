@@ -3,10 +3,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #FFFFFF;
-    background-image: url(spacestars.jpg);
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #F5F8F4;
+    color: #1D3328;
 
 }
 
@@ -21,22 +21,20 @@ body {
 header {
     grid-column: 2 / 8;
     grid-row: 1;
+    background-color: #1D3328;
+    color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 header h1 {
-    font-size: 3rem;
-    font-weight: 900;
-    color:#aee8ff;
-    text-shadow: 0 0 1px #f5d77a, 0 0 15px #f5d77a;
+    margin: 0;
 }
 
 nav {
     grid-column: 2 / 8;
     grid-row: 2;
-    text-align: center;
-    padding: 10px;
+    background-color: #2F5D45;
 }
 
 nav ul {
@@ -45,26 +43,36 @@ nav ul {
     justify-content: center;
     gap: 50px;
     padding: 10px 0;
+    margin: 0;
 }
 
 nav a {
-    color: #aee8ff;
-    font-weight: 700;
     text-decoration: none;
-    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #D8F2E3;
+}
+
+#homehero {
+    grid-column: 2 / 8;
+    grid-row: 3;
+    background-image: url("foresthero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 8px;
 }
 
 main {
-    grid-column: 3 / 7;
+    grid-column: 2 / 8;
     grid-row: 3;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    line-height: 1.6;
+    padding: 20px;
+    background-color: #EEF7EE;
+    border-radius: 8px;
+    margin-top: 340px;
 }
 
 main h2{
