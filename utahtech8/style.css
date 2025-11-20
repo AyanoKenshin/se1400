@@ -60,6 +60,7 @@ nav a {
     display: block;
     text-align: center;
     padding: 1rem 0rem;
+    transition: background-color 0.5s ease-out;
 }
 
 nav a:hover {
@@ -256,6 +257,13 @@ label {
         grid-column: 5 / 8;
         height: auto;
     }
+
+    video {
+        float: none;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -310,4 +318,9 @@ th {
 
 table tr:nth-of-type(even) {
     background-color: #F3F3F3;
+}
+
+video {
+    float: right;
+    margin-left: 2em;
 }
