@@ -94,6 +94,12 @@ main h2{
     margin-top: 20px;
 }
 
+main h3 {
+    color: #2F5D45;
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
 main p {
     line-height: 1.6;
     margin-bottom: 20px;
