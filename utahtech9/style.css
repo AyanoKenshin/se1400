@@ -220,6 +220,15 @@ label {
     grid-column: 2 / 3;
 }
 
+#shoppingcart img {
+    width: 100%;
+    height: auto;
+}
+#shoppingcart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 @media only screen and (max-width: 900px) {
     #wrapper {
         grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);
@@ -259,6 +268,10 @@ label {
         grid-row: 2 / 3;
         grid-column: 5 / 8;
         height: auto;
+    }
+
+    #shoppingcart {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     main img {
@@ -311,6 +324,10 @@ label {
 
     #shophero {
         display: none;
+    }
+
+    #shoppingcart {
+        grid-template-columns: 1fr;
     }
 }
 
