@@ -166,6 +166,16 @@ main img {
     background-position: center;
 }
 
+#shophero {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    height: 300px;
+    background-image: url('images/shophero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 form {
     display: grid;
     grid-template-rows: auto;
@@ -245,6 +255,12 @@ label {
         height: auto;
     }
 
+    #shophero {
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
+        height: auto;
+    }
+
     main img {
         float: none;
         width: 100%;
@@ -290,6 +306,10 @@ label {
     }
 
     #alumnihero {
+        display: none;
+    }
+
+    #shophero {
         display: none;
     }
 }
