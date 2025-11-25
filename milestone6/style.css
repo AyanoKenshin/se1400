@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: #F5F8F4;
     color: #1D3328;
@@ -127,6 +127,32 @@ footer a:hover {
     text-decoration: underline;
 }
 
+#shoppingcart {
+    margin-top: 30px;
+    display: flex;
+}
+
+#shoppingcart img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+#shoppingcart button {
+    background-color: #2F5D45;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#shoppingcart button:hover {
+    background-color: #3A6F53;
+}
+
 @media only screen and (max-width: 992px) {
     #wrapper {
         grid-template-columns: minmax(0, 1fr) 768px minmax(0, 1fr);
@@ -209,5 +235,9 @@ footer a:hover {
 
     footer {
         grid-column: 1 / 2;
+    }
+
+    #shoppingcart img {
+        max-width: 70%;
     }
 }
